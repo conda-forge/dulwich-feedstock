@@ -17,14 +17,16 @@ The project is named after the part of London that Mr. and Mrs. Git live in in t
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/dulwich-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/dulwich-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/dulwich-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/dulwich-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/dulwich-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/dulwich-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/dulwich-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/dulwich-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/dulwich-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/dulwich-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/dulwich-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/dulwich-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dulwich/badges/version.svg)](https://anaconda.org/conda-forge/dulwich)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/dulwich/badges/downloads.svg)](https://anaconda.org/conda-forge/dulwich)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-dulwich-green.svg)](https://anaconda.org/conda-forge/dulwich) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dulwich.svg)](https://anaconda.org/conda-forge/dulwich) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dulwich.svg)](https://anaconda.org/conda-forge/dulwich) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dulwich.svg)](https://anaconda.org/conda-forge/dulwich) |
 
 Installing dulwich
 ==================

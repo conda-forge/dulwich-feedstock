@@ -1,6 +1,6 @@
 {% set name = "dulwich" %}
-{% set version = "0.19.2" %}
-{% set sha256 = "c51e10c260543240e0806052af046e1a78b98cbe1ac1ef3880a78d2269e09da4" %}
+{% set version = "0.19.3" %}
+{% set sha256 = "0d1ab6adf5e8e9bc30cce6e2f924ca06e50241fb1bb17a585fc8d98e3c09c4a4" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:

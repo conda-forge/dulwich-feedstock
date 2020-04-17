@@ -1,6 +1,6 @@
 {% set name = "dulwich" %}
-{% set version = "0.19.15" %}
-{% set sha256 = "805a9b1932dc28b91f359f529c2e46b7623aec3ab719c96d3f2fc63d0d8d8411" %}
+{% set version = "0.19.16" %}
+{% set sha256 = "f74561c448bfb6f04c07de731c1181ae4280017f759b0bb04fa5770aa84ca850" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -73,7 +73,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: COPYING
-  summary: 'Python Git Library'
+  summary: Python Git Library
 
   description: |
     Python implementation of the Git file formats and protocols, without the need to have git installed.

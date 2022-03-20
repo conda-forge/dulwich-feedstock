@@ -1,6 +1,6 @@
 {% set name = "dulwich" %}
-{% set version = "0.20.34" %}
-{% set sha256 = "ea18c172990f250b266a86861b2bc15a7ba7cff5959643eeeb7f46a8e6f9713a" %}
+{% set version = "0.20.35" %}
+{% set sha256 = "953f6301a9df8a091fa88d55eed394a88bf9988cde8be341775354910918c196" %}
 
 package:
   name: {{ name|lower }}

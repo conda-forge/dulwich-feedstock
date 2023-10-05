@@ -57,7 +57,7 @@ test:
     - dulwich.web
   commands:
     - pip check
-    - dulwich --help
+    - dulwich help --all
   requires:
     - pip
 

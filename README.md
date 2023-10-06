@@ -410,4 +410,5 @@ Feedstock Maintainers
 =====================
 
 * [@mikofski](https://github.com/mikofski/)
+* [@xylar](https://github.com/xylar/)
 

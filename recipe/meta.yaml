@@ -17,9 +17,10 @@ build:
 
 requirements:
   build:
-    - python >=3.7                               # [build_platform != target_platform]
+    - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ compiler('rust') }}
     - {{ stdlib("c") }}
   host:
     - python
@@ -27,15 +28,13 @@ requirements:
     - setuptools-rust
     - pip
   run:
-    - python >=3.7
+    - python
     - urllib3 >=1.25
 
 test:
   imports:
     - dulwich
     - dulwich.tests
-    - dulwich.tests.compat
-    - dulwich.tests.utils
     - dulwich.archive
     - dulwich.client
     - dulwich.config

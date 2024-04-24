@@ -24,6 +24,7 @@ requirements:
   host:
     - python
     - setuptools >=61.2
+    - setuptools_rust
     - pip
   run:
     - python

@@ -30,6 +30,7 @@ requirements:
   run:
     - python
     - urllib3 >=1.25
+    - setuptools  # [py >= 312]
 
 test:
   imports:

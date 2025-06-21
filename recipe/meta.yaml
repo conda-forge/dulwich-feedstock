@@ -1,5 +1,5 @@
 {% set name = "dulwich" %}
-{% set version = "0.22.8" %}
+{% set version = "0.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dulwich-{{ version }}.tar.gz
-  sha256: 701547310415de300269331abe29cb5717aa1ea377af826bf513d0adfb1c209b
+  sha256: 0aa6c2489dd5e978b27e9b75983b7331a66c999f0efc54ebe37cab808ed322ae
 
 build:
   entry_points:

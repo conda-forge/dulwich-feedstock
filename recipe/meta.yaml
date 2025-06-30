@@ -1,5 +1,5 @@
 {% set name = "dulwich" %}
-{% set version = "0.23.0" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dulwich-{{ version }}.tar.gz
-  sha256: 0aa6c2489dd5e978b27e9b75983b7331a66c999f0efc54ebe37cab808ed322ae
+  sha256: 3d30e11a882817059b134fa9918d2ec5c95c3a3bd2e21034a368cf9e50d27ae3
 
 build:
   entry_points:
@@ -24,13 +24,14 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
-    - setuptools >=61.2
+    - setuptools >=77.0.0
     - setuptools-rust
     - pip
   run:
     - python
     - urllib3 >=1.25
     - setuptools  # [py >= 312]
+    - typing_extensions >=4.0  # [py < 310]
 
 test:
   imports:

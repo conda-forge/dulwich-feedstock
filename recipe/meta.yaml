@@ -31,7 +31,7 @@ requirements:
     - python
     - urllib3 >=2.2.2
     - setuptools  # [py >= 312]
-    - typing_extensions >=4.0  # [py <= 310]
+    - typing_extensions >=4.0  # [py <= 311]
 
 test:
   imports:

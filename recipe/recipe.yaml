@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dulwich
-  version: "1.1.0"
+  version: "1.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,11 +10,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dulwich-${{ version }}.tar.gz
-  sha256: 9aa855db9fee0a7065ae9ffb38e14e353876d82f17e33e1a1fb3830eb8d0cf43
+  sha256: ba43bfb3a7cad40d9607170561e8c3be42e7083b4b57af89a5f54e01577ff791
 
 build:
-  number: 1
-  script: 
+  number: 0
+  script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -24,7 +24,7 @@ build:
 requirements:
   build:
     - if: build_platform != target_platform
-      then: 
+      then:
         - python
         - cross-python_${{ target_platform }}
     - ${{ compiler('c') }}
@@ -76,7 +76,7 @@ tests:
 
 about:
   license: Apache-2.0
-  license_file: 
+  license_file:
     - COPYING
     - THIRDPARTY.yml
   summary: Python Git Library

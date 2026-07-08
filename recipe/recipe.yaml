@@ -1,15 +1,14 @@
 schema_version: 1
 
 context:
-  name: dulwich
   version: "1.2.10"
 
 package:
-  name: ${{ name|lower }}
+  name: dulwich
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dulwich-${{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/d/dulwich/dulwich-${{ version }}.tar.gz
   sha256: 106546960f592216315e56d32a92e72e67f1e86671335722f833f5ecd5b73314
 
 build:

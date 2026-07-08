@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dulwich
-  version: "1.2.6"
+  version: "1.2.10"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dulwich-${{ version }}.tar.gz
-  sha256: 405cfd53a99374ff03aacdd7a86d6a07615feca072ed69721f49ae2ebaa3eab4
+  sha256: 106546960f592216315e56d32a92e72e67f1e86671335722f833f5ecd5b73314
 
 build:
   number: 0

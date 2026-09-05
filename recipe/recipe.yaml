@@ -69,6 +69,10 @@ tests:
         - dulwich.server
         - dulwich.walk
         - dulwich.web
+        # compiled extensions
+        - dulwich._diff_tree
+        - dulwich._objects
+        - dulwich._pack
       pip_check: true
   - script:
       - dulwich help --all

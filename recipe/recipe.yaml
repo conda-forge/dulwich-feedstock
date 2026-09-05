@@ -75,7 +75,38 @@ tests:
         - dulwich._pack
       pip_check: true
   - script:
-      - dulwich help --all
+     - dulwich help --all
+  # riscv64, py3.15+: missing dependencies
+  # win: hang, also missing dependencies at least on arm64
+  - if: not (riscv64 or match(python, ">=3.15") or win)
+    then:
+      - requirements:
+          run:
+            - fastimport
+            - if: unix
+              then:
+                - gnupg
+                - openssh
+              else:
+                - m2-gnupg
+            # - gpgmepy
+            - hypothesis
+            - merge3
+            - if: not win-arm64
+              then: paramiko
+        files:
+          source:
+            # test get confused if dulwich isn't located related to PWD
+            - dulwich/
+            - docs/
+            - testdata/
+            - tests/
+        script:
+          - if: linux
+            then:
+              - mkdir tmp
+              - TMPDIR=${PWD}/tmp python -m unittest -v tests.test_suite
+            else: python -m unittest -v tests.test_suite
 
 about:
   license: Apache-2.0

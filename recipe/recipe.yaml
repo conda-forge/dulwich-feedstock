@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.2.21"
+  version: "1.2.22"
 
 package:
   name: dulwich
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/d/dulwich/dulwich-${{ version }}.tar.gz
-  sha256: 5d3939f64883e6799614cab708ef4ee9ef415dd6dcad47527cdbb0eea43bf3a2
+  sha256: be6ec253943069b5393f7f8c21dcb3f2aea784329829c74fbcc39d98a99f3bb0
 
 build:
   number: 0
